@@ -12,7 +12,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-color: #e8f4f8; /* Updated background color */
+	background-color: #e8f4f8;
 }
 
 /* Container to hold everything */
@@ -29,7 +29,7 @@ h1 {
 	font-size: 2.2rem;
 	margin-bottom: 20px;
 	font-weight: 700;
-	color: #1a73e8; /* Updated to a calming blue tone */
+	color: #1a73e8;
 	text-align: center;
 }
 
@@ -47,13 +47,13 @@ input[type="text"] {
 	padding: 12px;
 	font-size: 1rem;
 	border-radius: 8px;
-	border: 2px solid #1a73e8; /* Updated border color */
+	border: 2px solid #1a73e8;
 	outline: none;
 	transition: 0.3s;
 }
 
 input[type="text"]:focus {
-	border-color: #0056b3; /* Darker focus border */
+	border-color: #0056b3;
 	box-shadow: 0 0 5px #0056b3;
 }
 
@@ -70,7 +70,7 @@ button {
 }
 
 button:hover {
-	background-color: #0056b3; /* Darker hover color */
+	background-color: #0056b3;
 }
 
 /* Task list styling */
@@ -85,28 +85,30 @@ li {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 0;
-	border-bottom: 1px dashed #ccc; /* Updated to dashed separator */
+	border-bottom: 1px dashed #ccc;
 	font-size: 1rem;
 }
 
-/* Task completion button styling */
-li button {
+/* Стиль для кнопки Complete (Галочка) */
+li .complete-btn-new {
 	background-color: transparent;
-	color: #34a853; /* Green for complete button */
+	color: #34a853;
 	font-size: 1.5rem;
 	border: none;
+    padding: 0 10px 0 0;
 	cursor: pointer;
-	margin-right: 10px;
+	margin-right: 5px;
 	transition: 0.3s;
 }
 
-li button:hover {
-	color: #0c661b; /* Darker green on hover */
+/* Стиль для тексту завдання */
+li span {
+    flex-grow: 1;
 }
 
-/* Remove button */
+/* Стиль для кнопки Remove (слово "Remove") */
 li .remove-btn {
-	background-color: #ea4335; /* Red color for remove button */
+	background-color: #ea4335;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
@@ -117,7 +119,7 @@ li .remove-btn {
 }
 
 li .remove-btn:hover {
-	background-color: #b71c1c; /* Darker red on hover */
+	background-color: #b71c1c;
 }
 
 /* Task text styling */
